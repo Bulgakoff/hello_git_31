@@ -1,7 +1,7 @@
 
 
 import random
-
+#надо добавить коммент
 puzzle_num = random.randint(1, 50)
 
 
