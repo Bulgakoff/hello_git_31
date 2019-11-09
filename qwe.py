@@ -1,8 +1,8 @@
-
-
 import random
 
-puzzle_num = random.randint(1, 50)
+min_n = 1
+max_n = 50
+puzzle_num = random.randint(min_n, max_n)
 
 
 def main():
