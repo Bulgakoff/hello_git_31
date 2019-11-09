@@ -1,8 +1,13 @@
-
-
 import random
+<<<<<<< HEAD
 #надо добавить коммент
 puzzle_num = random.randint(1, 50)
+=======
+
+min_n = 1
+max_n = 50
+puzzle_num = random.randint(min_n, max_n)
+>>>>>>> f56dd1f43f334d1b6b2976452ca45c6231f0b8ca
 
 
 def main():
