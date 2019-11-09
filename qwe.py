@@ -5,6 +5,7 @@ max_n = 50
 puzzle_num = random.randint(min_n, max_n)
 
 
+
 def main():
     game_guess(puzzle_num)
 
