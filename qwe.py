@@ -2,10 +2,10 @@ import random
 
 
 def main():
-    min_n = 1
-    max_n = 50
-    puzzle_num = random.randint(min_n, max_n)
-    game_guess(puzzle_num, min_n, max_n)
+    min_number_of_range = 1
+    max_number_of_range = 50
+    puzzle_num = random.randint(min_number_of_range, max_number_of_range)
+    game_guess(puzzle_num, min_number_of_range, max_number_of_range)
 
 
 def game_guess(p_n, minn, maxx):
@@ -13,7 +13,7 @@ def game_guess(p_n, minn, maxx):
     print(p_n)
     guess_num = None
 
-    while cond(attempts, guess_num, p_n, minn, maxx):
+    while cond(attempts, guess_num, p_n):
         guess_num = int(input('Введите свой ответ : '))
         attempts += 1
         if p_n < guess_num:
@@ -35,7 +35,7 @@ def game_guess(p_n, minn, maxx):
     print('GAME OVER')
 
 
-def cond(a, g, p, mi, ma):
+def cond(a, g, p):
     return a < 6 and g != p
 
 
